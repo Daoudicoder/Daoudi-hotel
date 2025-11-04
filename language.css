@@ -1,0 +1,21 @@
+/* When French language is selected on the HTML */
+html[lang="fr"] .nav-menu .lang {
+    padding-left: 18px;
+    padding-right: 18px;
+    min-width: 70px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+html[lang="fr"] .about-services .lang {
+    line-height: 1.6;
+}
+
+html[lang="fr"] .about-services a.lang {
+    margin-top: -10px;
+}
+
+.why-choose-conainter .lang{
+    display: flex;
+    flex-wrap: wrap;
+}
+

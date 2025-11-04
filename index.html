@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Haven Hotel</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check_circle" />
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="inmotion.css">
+    <link rel="stylesheet" href="language.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="logo-text">HOTEL<span>ER</span></div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    
+                    <!-- Pages Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#pages" class="nav-link dropdown-toggle">Pages</a>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item">About</a>
+                            <a href="contact.html" class="dropdown-item">Contact</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="Gallery.html" class="dropdown-item">Gallery</a>
+                        </div>
+                    </li>
+                    
+                    <!-- Services Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#services" class="nav-link dropdown-toggle">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="#spa" class="dropdown-item">Services</a>
+                            <a href="restaurnt.html" class="dropdown-item">Restaurant</a>
+
+                        </div>
+                    </li>
+                    
+                    <!-- Rooms Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#rooms" class="nav-link dropdown-toggle">Rooms</a>
+                        <div class="dropdown-menu">
+                            <a href="Rooms-Suites.html" class="dropdown-item">Single Room</a>
+                            <a href="room.html" class="dropdown-item">Double Room</a>
+                        </div>
+                    </li>
+                    
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    
+                    <!-- News -->
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">News</a>
+                    </li>
+
+                    <!-- Mobile Buttons -->
+                    <div class="mobile-buttons">
+                        <div class="language-selector">
+                            <button class="language-btn">
+                                <i class="fas fa-globe"></i>
+                                EN
+                            </button>
+                            <div class="language-dropdown">
+                                <div class="lang-btn active" data-lang="en">
+                                    <div class="language-flag flag-us">US</div>
+                                    English
+                                </div>
+                                <div class="lang-btn" data-lang="fr">
+                                    <div class="language-flag flag-fr">FR</div>
+                                    Français
+                                </div>
+                                <div class="lang-btn" data-lang="es">
+                                    <div class="language-flag flag-es">ES</div>
+                                    Español
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="booking.html" class="btn-booking">
+                            <i class="fas fa-calendar-check"></i>
+                            Book Now
+                    </a>
+                    </div>
+                </ul>
+
+                <!-- Nav Actions -->
+                <div class="nav-actions">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="language-btn">
+                            <i class="fas fa-globe"></i>
+                            EN
+                        </button>
+                        <div class="language-dropdown">
+                            <div class="lang-btn active" data-lang="en">
+                                <div class="language-flag flag-us">US</div>
+                                English
+                            </div>
+                            <div class="lang-btn" data-lang="fr">
+                                <div class="language-flag flag-fr">FR</div>
+                                Français
+                            </div>
+                            <div class="lang-btn" data-lang="es">
+                                <div class="language-flag flag-es">ES</div>
+                                Español
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Booking Button -->
+                    <button class="btn-send">
+                        Book Now
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Overlay for mobile menu -->
+        <div class="overlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+        <main class="hero">
+            <div class="container">
+                
+                <div class="text">
+                    <div class="icon">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2 class="lang" data-key="welcomeTitle">Welcome to Hotel luxury ♕</h2>
+                    <hr class="hr">
+                    <h3 class="lang" data-key="welcomeSubtitle">A luxury hotel experience that blends comfort</h3>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- Luxury Elements -->
+        <div class="luxury-elements-home">
+            <div class="luxury-element-home element-1">✦</div>
+            <div class="luxury-element-home element-2">❖</div>
+            <div class="luxury-element-home element-3">♕</div>
+        </div>
+    </section>
+                <div class="whatsapp-float">
+                <a href="https://wa.me/YOURPHONENUMBER" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <span class="whatsapp-text lang" data-key="chatWithUs">Chat with us</span>
+            </div>
+
+    
+    <!-- About Section -->
+    <section class="sectoin-about" id="about">
+        <div class="container">
+            <h2 class="section-title lang" data-key="aboutUs">About <span class="lang" data-key="us">Us</span></h2>
+            <hr class="hr">
+            <p class="section-subtitle lang" data-key="aboutSubtitle">More than 10 years of comfort and luxury</p>
+            
+            <div class="about">
+                <div class="img">
+                <img class="img" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400&h=600&fit=crop" alt="Luxury Hotel Bathroom"> 
+                </div>
+
+                <div class="text-about">
+                    <h2 class="lang" data-key="welcome">Welcome</h2>
+                    <h3 class="lang" data-key="toHotel">to Hotel Golden Star</h3>
+                    <h4 class="lang" data-key="luxuryComfort">Where Luxury Meets Comfort</h4>
+                    <p class="lang" data-key="aboutDescription1">Founded in 1990, our hotel has been a beacon of sophistication and impeccable service. What began as a small boutique establishment has grown into one of the most prestigious addresses in the city, without ever losing our personal touch.</p>
+                    <p class="p-A lang" data-key="aboutDescription2">Every corner of our hotel tells a story - from the handcrafted furnishings to the curated art collection. We believe true luxury lies in the details and in creating memorable experiences for our guests.</p>
+                    <ul>
+                        <li><span class="material-symbols-outlined">check_circle</span><span class="lang" data-key="feature1">Introduce best the Hotel Booking & their services</span></li>
+                        <li><span class="material-symbols-outlined">check_circle</span><span class="lang" data-key="feature2">Booking mission statement or Luxury hotel</span></li>
+                        <li><span class="material-symbols-outlined">check_circle</span><span class="lang" data-key="feature3">Highlight featured on Booking project</span></li>
+                    </ul>
+                    <a href="" class="btn-read lang" data-key="readMore">Read more</a>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Milestones -->
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" data-count="20">0</div>
+                <div class="stat-text">
+                    <span class="lang" data-key="yearsOf">Years Of</span>
+                    <span class="lang" data-key="experience">Experience</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="10">0</div>
+                <div class="stat-text">
+                    <span class="lang" data-key="online">Online</span>
+                    <span class="lang" data-key="booking">Booking</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="40">0</div>
+                <div class="stat-text">
+                    <span class="lang" data-key="experienced">Experienced</span>
+                    <span class="lang" data-key="bellboy">Bellboy</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="30">0</div>
+                <div class="stat-text">
+                    <span class="lang" data-key="bestHotel">Best Hotel</span>
+                    <span class="lang" data-key="award">Award</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <h2 class="section-title lang" data-key="ourRooms">Our <span class="lang" data-key="rooms">Rooms</span></h2>
+            <hr class="hr">
+            <p class="section-subtitle lang" data-key="roomsSubtitle">Choose from our exquisite selection of accommodations</p>
+            
+            <div class="rooms-grid">
+                <div class="rooms-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1566669437685-b8e6e2869ec8" alt="Deluxe Room">
+                        <div class="price">$199/<span class="lang" data-key="night">night</span></div>
+                    </div>
+                    <div class="room-info">
+                        <h3 class="lang" data-key="deluxeRoom">Deluxe Room</h3>
+                        <p class="lang" data-key="deluxeDescription">Spacious room with premium amenities and stunning city views</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> <span class="lang" data-key="kingBed">King Bed</span></span>
+                            <span><i class="fas fa-user-friends"></i> <span class="lang" data-key="guests">2 Guests</span></span>
+                            <span><i class="fas fa-expand"></i> 35m²</span>
+                        </div>
+                        <a href="#book" class="btn-room" data-key="bookNow">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="rooms-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304" alt="Executive Suite">
+                        <div class="price">$299/<span class="lang" data-key="night">night</span></div>
+                    </div>
+                    <div class="room-info">
+                        <h3 class="lang" data-key="executiveSuite">Executive Suite</h3>
+                        <p class="lang" data-key="executiveDescription">Luxurious suite with separate living area and premium services</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> <span class="lang" data-key="kingBed">King Bed</span></span>
+                            <span><i class="fas fa-user-friends"></i> <span class="lang" data-key="guests">2 Guests</span></span>
+                            <span><i class="fas fa-expand"></i> 55m²</span>
+                        </div>
+                        <a href="#book" class="btn-room" data-key="bookNow">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="rooms-card">
+                    <div class="room-img">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Presidential Suite">
+                        <div class="price">$499/<span class="lang" data-key="night">night</span></div>
+                    </div>
+                    <div class="room-info">
+                        <h3 class="lang" data-key="presidentialSuite">Presidential Suite</h3>
+                        <p class="lang" data-key="presidentialDescription">The ultimate in luxury with panoramic views and exclusive amenities</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> <span class="lang" data-key="kingBed">King Bed</span></span>
+                            <span><i class="fas fa-user-friends"></i> <span class="lang" data-key="guests">4 Guests</span></span>
+                            <span><i class="fas fa-expand"></i> 85m²</span>
+                        </div>
+                        <a href="#book" class="btn-room" data-key="bookNow">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="sectoin--services" id="services">
+        <div class="container">
+            <h2 class="section-title lang" data-key="ourServices">Our <span class="lang" data-key="services">Services</span></h2>
+            <hr class="hr">
+            <p class="section-subtitle lang" data-key="servicesSubtitle">Exceptional amenities for an unforgettable stay</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="lang" data-key="gourmetDining">Gourmet Dining</h3>
+                    <p class="lang" data-key="gourmetDescription">Experience world-class cuisine at our award-winning restaurants</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="lang" data-key="spaWellness">Spa & Wellness</h3>
+                    <p class="lang" data-key="spaDescription">Rejuvenate with our luxurious spa treatments and facilities</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="lang" data-key="infinityPool">Infinity Pool</h3>
+                    <p class="lang" data-key="poolDescription">Relax by our stunning infinity pool with panoramic views</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="lang" data-key="concierge">24/7 Concierge</h3>
+                    <p class="lang" data-key="conciergeDescription">Our dedicated staff is available around the clock to assist you</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="lang" data-key="highSpeedWifi">High-Speed WiFi</h3>
+                    <p class="lang" data-key="wifiDescription">Stay connected with our complimentary high-speed internet</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="lang" data-key="valetParking">Valet Parking</h3>
+                    <p class="lang" data-key="parkingDescription">Complimentary valet service for all our guests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Services Section -->
+    <section class="about-services">
+        <div class="about-content-spa">
+            <div class="text-about-spa">
+                <div class="logo"></div>
+                <h3 class="lang" data-key="theRestaurant">The Restaurant</h3>
+                <hr>
+                <p class="lang" data-key="restaurantDescription">Escape to a world of pure elegance and serenity. Our luxury resort offers an exceptional blend of comfort, world-class amenities, and personalized service — all set in a breathtaking location designed to make every moment unforgettable.</p>
+                <a href="" class="lang" data-key="bookingNow">Booking now</a>
+            </div>
+            <div class="about-img-spa">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Restaurant">
+            </div>
+        </div>
+        
+        <div class="about-content-blog">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Spa">
+            </div>
+            <div class="text-blog">
+                <div class="logo"></div>
+                <h3 class="lang" data-key="theSpa">The Spa</h3>
+                <hr>
+                <p class="lang" data-key="spaDescription2">Indulge your senses with exquisite dishes prepared by our master chefs. Our restaurant combines international flavors with local ingredients, offering an unforgettable dining experience in a warm and elegant atmosphere.</p>
+                <a href="" class="lang" data-key="bookingNow">Booking now</a>
+            </div>
+            <div class="about-img-2">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 alt="Spa">
+            </div>
+        </div>
+        
+        <div class="about-content-sp">
+            <div class="text-about-sp">
+                <div class="logo"></div>
+                <h3 class="lang" data-key="thePool">The Pool</h3>
+                <hr>
+                <p class="lang" data-key="poolDescription2">Rejuvenate your body and soul at our luxury spa. From soothing massages to revitalizing treatments, every detail is designed to provide complete relaxation and inner harmony.</p>
+                <a href="" class="lang" data-key="bookingNow">Booking now</a>
+            </div>
+            <div class="about-img-sp">
+                <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pool">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title lang" data-key="whyChoose">Why <span class="lang" data-key="chooseUs">choose Us</span></h2>
+            <hr class="hr">
+            <p class="section-subtitle lang" data-key="whyChooseSubtitle">choose the best services comfort and luxury</p>
+            
+<div class="why-choose-container">
+                    <div class="text-why-choose-container">
+                    <div class="header-text">
+                        <h2 class="lang" data-key="whyChoose">Why Choose us</h2>
+                        <h3 class="lang" data-key="whyChooseGoal">Our goal is Ensure Hotel Booking Accessibility.</h3>
+                        <p class="lang" data-key="whyChooseDescription">Hoteler in a powerful way of just not an only professions, however, in a passion for our Company. We have to a tendency to believe the idea that smart looking of any website.</p>
+                    </div>
+                    <div class="line">
+                        <div class="project">
+                            <h3 class="lang" data-key="projectDone">Project Done</h3>
+                            <span>70%</span>
+                            <hr class="hr-animate">
+                        </div>
+                        <div class="happy">
+                            <h3 class="lang" data-key="happyClients">Happy Clients</h3>
+                            <span>80%</span>
+                            <hr class="hr-animate">
+                        </div>
+                        <div class="service-done">
+                            <h3 class="lang" data-key="serviceDone">Service Done</h3>
+                            <span>95%</span>
+                            <hr class="hr-animate">
+                        </div>
+                    </div>
+                </div>
+                <div class="img-why-choose">
+                    <img src="Services.png" alt="Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section class="restaurant-section">
+        <div class="restaurant-background"></div>
+        
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="restaurant-container">
+            <div class="restaurant-content">
+                <div class="restaurant-badge lang" data-key="culinaryExcellence">Culinary Excellence</div>
+                
+                <h1 class="restaurant-title">
+                    <span class="lang" data-key="epicureanDelights">Épicurean Delights</span>
+                    <span class="lang" data-key="fineDining">Fine Dining Experience</span>
+                </h1>
+                
+                <p class="restaurant-subtitle lang" data-key="restaurantSubtitle">
+                    Indulge in an exquisite culinary journey where traditional techniques meet innovative flavors. 
+                    Our master chefs craft each dish with passion, using only the finest seasonal ingredients.
+                </p>
+                
+                <div class="restaurant-highlights">
+                    <div class="highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="highlight-title lang" data-key="seasonalMenu">Seasonal Menu</h3>
+                        <p class="highlight-text lang" data-key="seasonalDescription">Fresh ingredients curated daily</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-wine-glass-alt"></i>
+                        </div>
+                        <h3 class="highlight-title lang" data-key="sommelierSelection">Sommelier Selection</h3>
+                        <p class="highlight-text lang" data-key="sommelierDescription">Expertly paired wines</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="highlight-title lang" data-key="awardWinning">Award Winning</h3>
+                        <p class="highlight-text lang" data-key="awardDescription">Michelin recognized cuisine</p>
+                    </div>
+                </div>
+                
+                <div class="restaurant-cta">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="lang" data-key="reserveTable">Reserve a Table</span>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-book-open"></i>
+                        <span class="lang" data-key="viewMenu">View Menu</span>
+                    </button>
+                </div>
+                
+                <div class="food-gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Gourmet Appetizer" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title lang" data-key="gourmetAppetizers">Gourmet Appetizers</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Main Course" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-title lang" data-key="exquisiteEntrees">Exquisite Entrees</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-restaurant">
+                    <p class="testimonial-restaurant-text lang" data-key="restaurantTestimonial">
+                        "An unforgettable dining experience. Each dish was a masterpiece, and the service was impeccable. 
+                        The wine pairing elevated the entire meal to another level."
+                    </p>
+                    <p class="testimonial-author">— James Wilson, <span class="lang" data-key="foodCritic">Food Critic</span></p>
+                </div>
+            </div>
+            
+            <div class="menu-preview">
+                <div class="menu-ornament"></div>
+                <div class="menu-header">
+                    <h2 class="menu-title lang" data-key="signatureDishes">Signature Dishes</h2>
+                    <p class="menu-subtitle lang" data-key="chefSelection">Chef's Selection</p>
+                </div>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Truffle Risotto" class="item-image">
+                        <div class="item-info">
+                            <h3 class="item-title lang" data-key="truffleRisotto">Truffle Risotto</h3>
+                            <p class="item-description lang" data-key="truffleDescription">Arborio rice with black truffle and parmesan</p>
+                        </div>
+                        <div class="item-price">$38</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=998&q=80" alt="Wagyu Beef" class="item-image">
+                        <div class="item-info">
+                            <h3 class="item-title lang" data-key="wagyuBeef">Wagyu Beef Tenderloin</h3>
+                            <p class="item-description lang" data-key="wagyuDescription">With roasted vegetables and red wine reduction</p>
+                        </div>
+                        <div class="item-price">$62</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80" alt="Atlantic Lobster" class="item-image">
+                        <div class="item-info">
+                            <h3 class="item-title lang" data-key="atlanticLobster">Atlantic Lobster</h3>
+                            <p class="item-description lang" data-key="lobsterDescription">Butter poached with saffron sauce</p>
+                        </div>
+                        <div class="item-price">$54</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Chocolate Soufflé" class="item-image">
+                        <div class="item-info">
+                            <h3 class="item-title lang" data-key="chocolateSouffle">Chocolate Soufflé</h3>
+                            <p class="item-description lang" data-key="souffleDescription">With vanilla bean ice cream</p>
+                        </div>
+                        <div class="item-price">$18</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-container">
+            <h2 class="section-title lang" data-key="hotelGallery">Jim Hotel <span class="lang" data-key="gallery">Gallery</span></h2>
+            <hr class="hr">
+            <p class="section-subtitle lang" data-key="gallerySubtitle">Explore the luxurious amenities and breathtaking views of Jim Hotel through our photo collection</p>
+        
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal(0)">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Jim Hotel Exterior">
+                    <div class="gallery-caption">
+                        <h3 class="lang" data-key="grandEntrance">Grand Entrance</h3>
+                        <p class="lang" data-key="entranceDescription">The stunning facade of Jim Hotel at sunset</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(1)">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Luxury Suite">
+                    <div class="gallery-caption">
+                        <h3 class="lang" data-key="presidentialSuite">Presidential Suite</h3>
+                        <p class="lang" data-key="suiteDescription">Our most luxurious accommodation</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(2)">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Hotel Pool">
+                    <div class="gallery-caption">
+                        <h3 class="lang" data-key="infinityPool">Infinity Pool</h3>
+                        <p class="lang" data-key="poolDescription3">Relax with breathtaking ocean views</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(3)">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Restaurant">
+                    <div class="gallery-caption">
+                        <h3 class="lang" data-key="gourmetRestaurant">Gourmet Restaurant</h3>
+                        <p class="lang" data-key="restaurantDescription2">Michelin-star dining experience</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(4)">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Spa Center">
+                    <div class="gallery-caption">
+                        <h3 class="lang" data-key="luxurySpa">Luxury Spa</h3>
+                        <p class="lang" data-key="spaDescription3">Ultimate relaxation and rejuvenation</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(5)">
+                    <img src="https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bar Lounge">
+                    <div class="gallery-caption">
+                        <h3 class="lang" data-key="skyLounge">Sky Lounge</h3>
+                        <p class="lang" data-key="loungeDescription">Signature cocktails with panoramic views</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(6)">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Conference Room">
+                    <div class="gallery-caption">
+                        <h3 class="lang" data-key="conferenceHall">Conference Hall</h3>
+                        <p class="lang" data-key="conferenceDescription">State-of-the-art meeting facilities</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(7)">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Garden View">
+                    <div class="gallery-caption">
+                        <h3 class="lang" data-key="tropicalGardens">Tropical Gardens</h3>
+                        <p class="lang" data-key="gardensDescription">Lush landscapes surrounding the property</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for image viewing -->
+        <div id="imageModal" class="modal">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <img id="modalImage" class="modal-img" src="" alt="">
+                <div class="modal-caption">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDesc"></p>
+                </div>
+            </div>
+            <button class="nav-btn prev-btn" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn next-btn" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-background"></div>
+        
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="booking-container">
+            <div class="luxury-badge lang" data-key="exclusiveExperience">Exclusive Experience</div>
+            
+            <h1 class="booking-title">
+                <span class="lang" data-key="eleganceRedefined">ELEGANCE REDEFINED</span>
+                <span class="lang" data-key="luxurySerenity">Where Luxury Meets Serenity</span>
+            </h1>
+            
+            <p class="booking-subtitle lang" data-key="bookingSubtitle">
+                Immerse yourself in unparalleled luxury at our award-winning hotel. 
+                Experience world-class service, exquisite accommodations, and memories that will last a lifetime.
+            </p>
+            
+            <div class="booking-cta">
+                <button class="btn btn-primary">
+                    <i class="fas fa-gem"></i>
+                    <span class="lang" data-key="bookYourStay">Book Your Stay</span>
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-compass"></i>
+                    <span class="lang" data-key="exploreSuites">Explore Suites</span>
+                </button>
+            </div>
+            
+            <div class="decoration-line"></div>
+            
+            <div class="luxury-features">
+                <div class="luxury-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="feature-title lang" data-key="personalConcierge">Personal Concierge</h3>
+                    <p class="feature-text lang" data-key="conciergeDescription2">Dedicated service for your every need</p>
+                </div>
+                
+                <div class="luxury-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="feature-title lang" data-key="wellnessRetreat">Wellness Retreat</h3>
+                    <p class="feature-text lang" data-key="wellnessDescription">Rejuvenate in our world-class spa</p>
+                </div>
+                
+                <div class="luxury-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="feature-title lang" data-key="michelinDining">Michelin Dining</h3>
+                    <p class="feature-text lang" data-key="michelinDescription">Culinary excellence by master chefs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container"> 
+            <h2 class="section-title lang" data-key="guestTestimonials">Guest <span class="lang" data-key="testimonials">Testimonials</span></h2>
+            <hr class="hr">
+            <p class="section-subtitle lang" data-key="testimonialsSubtitle">What our guests say about us</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="lang" data-key="testimonial1">Absolutely stunning hotel with exceptional service. The attention to detail was remarkable, and the staff went above and beyond to make our stay perfect.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="guest">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                        <h4>Sarah Johnson</h4>
+                        <span>New York, USA</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="lang" data-key="testimonial2">The presidential suite was beyond our expectations. The view was breathtaking, and the amenities were top-notch. We'll definitely be returning!</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="guest">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        <h4>Michael Chen</h4>
+                        <span>Toronto, Canada</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="lang" data-key="testimonial3">From the moment we arrived, we felt pampered. The spa treatments were divine, and the gourmet dining options were exceptional. Highly recommend!</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="guest">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez">
+                        <h4>Emma Rodriguez</h4>
+                        <span>Madrid, Spain</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Booking Form Section -->
+    <section class="booking" id="book">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h2 class="lang" data-key="bookYourStay">Book Your Stay</h2>
+                    <p class="lang" data-key="bookingDescription">Ready to experience luxury? Check availability and book your perfect stay with us.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>reservations@luxuryhaven.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Luxury Avenue, Beverly Hills, CA 90210</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="check-in" class="lang" data-key="checkIn">Check In</label>
+                        <input type="date" id="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out" class="lang" data-key="checkOut">Check Out</label>
+                        <input type="date" id="check-out" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adults" class="lang" data-key="adults">Adults</label>
+                        <select id="adults" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="children" class="lang" data-key="children">Children</label>
+                        <select id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type" class="lang" data-key="roomType">Room Type</label>
+                        <select id="room-type" required>
+                            <option value="deluxe" class="lang" data-key="deluxeRoom">Deluxe Room</option>
+                            <option value="executive" class="lang" data-key="executiveSuite">Executive Suite</option>
+                            <option value="presidential" class="lang" data-key="presidentialSuite">Presidential Suite</option>
+                        </select>
+                    </div>
+                    <a class="btn-send lang" href="booking.html">booking Now <i class="fas fa-paper-plane"></i> </a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="sectoin-contact" id="contact">
+        <div class="container">
+            <h2 class="section-title lang" data-key="contactUs">Contact <span class="lang" data-key="us">Us</span></h2>
+            <hr class="hr">
+            <p class="section-subtitle lang" data-key="contactSubtitle">We'd love to hear from you</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5547.286581951206!2d-7.57428303450299!3d33.600647300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd0f09d171f3%3A0x7d5a829c17b88202!2z2YHZhtiv2YIg2KfZhNmF2YbYstmE!5e1!3m2!1sar!2sma!4v1751668139977!5m2!1sar!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+<form action="https://formspree.io/f/meqyrlkg" method="post" class="contact-form">
+    <div class="form-group">
+        <input type="text" name="name" class="lang-placeholder" data-key="yourName" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" class="lang-placeholder" data-key="yourEmail" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" name="subject" class="lang-placeholder" data-key="subject" placeholder="Subject">
+    </div>
+    <div class="form-group">
+        <textarea name="message" class="lang-placeholder" data-key="yourMessage" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="btn-send lang" data-key="sendMessage">Send Message <i class="fas fa-paper-plane"></i></button>
+</form>
+            </div> 
+        </div>
+    </section>
+
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title lang" data-key="luxuryHotel">Luxury Hotel <span class="lang" data-key="blog">Blog</span></h2>
+            <hr class="hr">
+            <p class="section-subtitle lang" data-key="blogSubtitle">Discover the latest news, tips, and stories from our luxury hotel and the surrounding area</p>
+            
+            <div class="blog-posts">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Hotel room">
+                        <div class="hotel-badge lang" data-key="premiumSuite">Premium Suite</div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category lang" data-key="accommodation">Accommodation</span>
+                        <h3 class="lang" data-key="blogTitle1">New Luxury Suites With Breathtaking Ocean Views</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5/5)</span>
+                        </div>
+                        <p class="lang" data-key="blogDescription1">Our newly renovated ocean-view suites offer the ultimate in luxury and comfort with premium amenities and stunning vistas.</p>
+                        <a href="#" class="read-more">
+                            <span class="lang" data-key="readMore">Read More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="card-meta">
+                            <div class="author">
+                                <div class="author-img">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80" alt="Author image">
+                                </div>
+                                <span class="lang" data-key="hotelManager">Hotel Manager</span>
+                            </div>
+                            <div class="social-icons">
+                                <button class="icon-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span>24</span>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="far fa-comment"></i>
+                                    <span>8</span>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Hotel restaurant">
+                        <div class="hotel-badge lang" data-key="gourmet">Gourmet</div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category lang" data-key="dining">Dining</span>
+                        <h3 class="lang" data-key="blogTitle2">Exclusive Wine Tasting Event With Our Master Sommelier</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5/5)</span>
+                        </div>
+                        <p class="lang" data-key="blogDescription2">Join us for an exclusive wine tasting event featuring rare vintages from our cellar, expertly paired with gourmet delicacies.</p>
+                        <a href="#" class="read-more">
+                            <span class="lang" data-key="readMore">Read More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="card-meta">
+                            <div class="author">
+                                <div class="author-img">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Author image">
+                                </div>
+                                <span class="lang" data-key="executiveChef">Executive Chef</span>
+                            </div>
+                            <div class="social-icons">
+                                <button class="icon-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span>42</span>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="far fa-comment"></i>
+                                    <span>15</span>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1561503972-839d0c56d565?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Spa treatment">
+                        <div class="hotel-badge lang" data-key="wellness">Wellness</div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category lang" data-key="spa">Spa</span>
+                        <h3 class="lang" data-key="blogTitle3">New Relaxation Treatments at Our Luxury Spa Center</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4/5)</span>
+                        </div>
+                        <p class="lang" data-key="blogDescription3">Experience ultimate relaxation with our new spa treatments designed to rejuvenate your body and mind during your stay.</p>
+                        <a href="#" class="read-more">
+                            <span class="lang" data-key="readMore">Read More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="card-meta">
+                            <div class="author">
+                                <div class="author-img">
+                                    <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Author image">
+                                </div>
+                                <span class="lang" data-key="spaDirector">Spa Director</span>
+                            </div>
+                            <div class="social-icons">
+                                <button class="icon-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span>37</span>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="far fa-comment"></i>
+                                    <span>12</span>
+                                </button>
+                                <button class="icon-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <!-- Decorative elements -->
+        <div class="decoration decoration-1"></div>
+        <div class="decoration decoration-2"></div>
+        <div class="decoration decoration-3"></div>
+        <div class="decoration decoration-4"></div>
+        
+        <i class="floating-icon icon-1 fas fa-gem"></i>
+        <i class="floating-icon icon-2 fas fa-concierge-bell"></i>
+        <i class="floating-icon icon-3 fas fa-spa"></i>
+        
+        <div class="newsletter-content">
+            <h2 class="lang" data-key="joinExclusive">Join Our Exclusive Circle</h2>
+            <p class="lang" data-key="newsletterDescription">Subscribe to our premium newsletter and receive curated luxury travel insights, special member-only offers, and personalized recommendations for your next lavish getaway.</p>
+            
+            <form class="newsletter-form" id="newsletterForm">
+                <div class="form-group">
+                    <input type="email" class="lang-placeholder" data-key="yourEmail" placeholder="Your elegant email address" required>
+                </div>
+                <button type="submit">
+                    <i class="fas fa-paper-plane"></i> <span class="lang" data-key="subscribeNow">Subscribe Now</span>
+                </button>
+            </form>
+            
+            <div class="benefits">
+                <div class="benefit">
+                    <i class="fas fa-crown"></i>
+                    <span class="lang" data-key="vipTreatment">VIP Treatment</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-percent"></i>
+                    <span class="lang" data-key="exclusiveDiscounts">Exclusive Discounts</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-earlybirds"></i>
+                    <span class="lang" data-key="earlyAccess">Early Access</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-gift"></i>
+                    <span class="lang" data-key="specialRewards">Special Rewards</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="success-message" id="successMessage">
+            <div class="close-message" id="closeMessage">
+                <i class="fas fa-times"></i>
+            </div>
+            <i class="fas fa-check-circle"></i>
+            <h3 class="lang" data-key="welcomeLuxury">Welcome to Our Luxury Circle!</h3>
+            <p class="lang" data-key="successMessageText">Thank you for subscribing. We've sent a confirmation email with your exclusive welcome gift.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title lang" data-key="frequentlyAsked">Frequently Asked <span class="lang" data-key="questions">Questions</span></h2>
+            <p class="section-subtitle lang" data-key="faqSubtitle">Find quick answers to common inquiries about our hotel and services</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang" data-key="faq1">What are your check-in and check-out times?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang" data-key="faqAnswer1">Check-in time is 3:00 PM and check-out is at 12:00 PM. Early check-in and late check-out may be available upon request, subject to availability and additional charges.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang" data-key="faq2">Do you offer airport transportation?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang" data-key="faqAnswer2">Yes, we provide complimentary airport shuttle service for our guests. Please inform us of your flight details at least 24 hours in advance to arrange pickup.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang" data-key="faq3">Is parking available at the hotel?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang" data-key="faqAnswer3">We offer valet parking services for $35 per night. Self-parking is available in the nearby garage at a discounted rate for hotel guests.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang" data-key="faq4">Are pets allowed in the hotel?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang" data-key="faqAnswer4">We welcome pets up to 25 lbs with a non-refundable cleaning fee of $75 per stay. Please notify us in advance if you plan to bring your pet.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="lang" data-key="faq5">What dining options are available?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="lang" data-key="faqAnswer5">We have three dining venues: our signature restaurant serving international cuisine, a casual bistro, and a rooftop bar with panoramic city views. Room service is available 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="lang" data-key="luxuryHaven">Luxury Haven</h3>
+                    <p class="lang" data-key="footerDescription">Redefining luxury hospitality with exceptional service, world-class amenities, and unforgettable experiences.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="lang" data-key="quickLinks">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" class="lang" data-key="home">Home</a></li>
+                        <li><a href="#rooms" class="lang" data-key="rooms">Rooms</a></li>
+                        <li><a href="#services" class="lang" data-key="services">Services</a></li>
+                        <li><a href="#gallery" class="lang" data-key="gallery">Gallery</a></li>
+                        <li><a href="#about" class="lang" data-key="aboutUs">About Us</a></li>
+                        <li><a href="#contact" class="lang" data-key="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="lang" data-key="services">Services</h3>
+                    <ul>
+                        <li><a href="#" class="lang" data-key="spaWellness">Spa & Wellness</a></li>
+                        <li><a href="#" class="lang" data-key="gourmetDining">Gourmet Dining</a></li>
+                        <li><a href="#" class="lang" data-key="eventSpaces">Event Spaces</a></li>
+                        <li><a href="#" class="lang" data-key="concierge">Concierge</a></li>
+                        <li><a href="#" class="lang" data-key="transportation">Transportation</a></li>
+                        <li><a href="#" class="lang" data-key="specialPackages">Special Packages</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="lang" data-key="newsletter">Newsletter</h3>
+                    <p class="lang" data-key="newsletterFooter">Subscribe to our newsletter for special offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="lang-placeholder" data-key="yourEmail" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luxury Haven Hotel. <span class="lang" data-key="allRightsReserved">All Rights Reserved.</span></p>
+                <div class="footer-links">
+                    <a href="#" class="lang" data-key="privacyPolicy">Privacy Policy</a>
+                    <a href="#" class="lang" data-key="termsOfService">Terms of Service</a>
+                    <a href="#" class="lang" data-key="cookiesPolicy">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+// Debug script to check if language buttons exist
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded - checking for language buttons...');
+    const buttons = document.querySelectorAll('.lang-btn');
+    console.log('Language buttons:', buttons);
+    
+    // Force language initialization after a delay
+    setTimeout(() => {
+        if (typeof languageManager !== 'undefined') {
+            languageManager.debug();
+        }
+    }, 1000);
+});
+
+</script>
+    <!-- JavaScript Files -->
+    <script src="test.js"></script>
+    <script src="inmotion.js"></script>
+    <script src="language.js"></script>
+    <script src="navbar.js"></script>
+
+
+</body>
+</html>
